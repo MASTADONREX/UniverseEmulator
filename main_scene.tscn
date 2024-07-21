@@ -1,0 +1,233 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxsw1qherrsf2"]
+
+[ext_resource type="Script" path="res://Interface.gd" id="2_6f1sa"]
+
+[node name="Node" type="Node"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 152.0
+script = ExtResource("2_6f1sa")
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 0
+offset_top = 8.0
+offset_right = 640.0
+offset_bottom = 144.0
+
+[node name="LabelTimeSpend" type="Label" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 94.0
+offset_bottom = 26.0
+text = "Time Spend:"
+
+[node name="LabelYears" type="Label" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 40.0
+offset_right = 96.0
+offset_bottom = 64.0
+text = "Years"
+
+[node name="RL" type="RichTextLabel" parent="Control/Panel/LabelYears"]
+layout_mode = 0
+offset_left = -28.0
+offset_top = -7.0
+offset_right = -4.0
+offset_bottom = 33.0
+theme_override_colors/default_color = Color(1, 0.0784314, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "0"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+text_direction = 2
+
+[node name="LabelMonths" type="Label" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 40.0
+offset_right = 180.0
+offset_bottom = 64.0
+text = "Months"
+
+[node name="RL" type="RichTextLabel" parent="Control/Panel/LabelMonths"]
+layout_mode = 0
+offset_left = -36.0
+offset_top = -7.0
+offset_right = -5.0
+offset_bottom = 33.0
+theme_override_colors/default_color = Color(1, 0.0784314, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "0"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+text_direction = 2
+
+[node name="LabelWeeks" type="Label" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 218.0
+offset_top = 40.0
+offset_right = 282.0
+offset_bottom = 64.0
+text = "Weeks"
+
+[node name="RL" type="RichTextLabel" parent="Control/Panel/LabelWeeks"]
+layout_mode = 0
+offset_left = -36.0
+offset_top = -7.0
+offset_right = -4.0
+offset_bottom = 33.0
+theme_override_colors/default_color = Color(1, 0.0784314, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "0"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+text_direction = 2
+
+[node name="LabelDays" type="Label" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 40.0
+offset_right = 371.0
+offset_bottom = 64.0
+text = "Days"
+
+[node name="RL" type="RichTextLabel" parent="Control/Panel/LabelDays"]
+layout_mode = 0
+offset_left = -36.0
+offset_top = -7.0
+offset_right = -4.0
+offset_bottom = 33.0
+theme_override_colors/default_color = Color(1, 0.0784314, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "0"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+text_direction = 2
+
+[node name="LabelHours" type="Label" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 385.0
+offset_top = 40.0
+offset_right = 449.0
+offset_bottom = 64.0
+text = "Hours"
+
+[node name="RL" type="RichTextLabel" parent="Control/Panel/LabelHours"]
+layout_mode = 0
+offset_left = -36.0
+offset_top = -7.0
+offset_right = -5.0
+offset_bottom = 33.0
+theme_override_colors/default_color = Color(1, 0.0784314, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "0"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+text_direction = 2
+
+[node name="LabelMinuts" type="Label" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 471.0
+offset_top = 40.0
+offset_right = 535.0
+offset_bottom = 64.0
+text = "Minutes"
+
+[node name="RL" type="RichTextLabel" parent="Control/Panel/LabelMinuts"]
+layout_mode = 0
+offset_left = -36.0
+offset_top = -7.0
+offset_right = -3.0
+offset_bottom = 33.0
+theme_override_colors/default_color = Color(1, 0.0784314, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "0"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+text_direction = 2
+
+[node name="LabelSeconds" type="Label" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 567.0
+offset_top = 40.0
+offset_right = 631.0
+offset_bottom = 64.0
+text = "Seconds"
+
+[node name="RL" type="RichTextLabel" parent="Control/Panel/LabelSeconds"]
+layout_mode = 0
+offset_left = -30.0
+offset_top = -7.0
+offset_bottom = 33.0
+theme_override_colors/default_color = Color(1, 0.0784314, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "0"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+text_direction = 2
+
+[node name="LabelRunCount" type="Label" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 90.0
+offset_right = 92.0
+offset_bottom = 113.0
+text = "Run Count:"
+
+[node name="RL" type="RichTextLabel" parent="Control/Panel/LabelRunCount"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = -7.0
+offset_right = 209.0
+offset_bottom = 33.0
+theme_override_colors/default_color = Color(1, 0.0784314, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "0"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+text_direction = 1
