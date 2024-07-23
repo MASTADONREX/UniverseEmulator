@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="UniverseSandboxEmulator"
+config/name="UniverseEmulator"
 run/main_scene="res://main_scene.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
@@ -19,12 +19,21 @@ config/icon="res://icon.svg"
 
 Global="*res://Logic.gd"
 
+[debug]
+
+file_logging/enable_file_logging.pc=false
+gdscript/warnings/enable=false
+gdscript/warnings/exclude_addons=false
+gdscript/warnings/renamed_in_godot_4_hint=false
+shader_language/warnings/enable=false
+
 [display]
 
 window/size/viewport_width=640
 window/size/viewport_height=150
 window/size/initial_position=Vector2i(100, 100)
 window/size/resizable=false
+window/energy_saving/keep_screen_on=false
 
 [rendering]
 
