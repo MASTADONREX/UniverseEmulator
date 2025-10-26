@@ -9,6 +9,8 @@ var window
 var window_is_active
 
 var timer_exists : bool = false
+var cooldown_counter : int = 0
+var cooldown_counter_max : int = 30
 
 func _ready():
 	window = get_viewport().get_window()
@@ -51,7 +53,10 @@ func _eval_stats_timers():
 	if RunTime != 0:
 		Steam.setStatInt("RunTime", RunTime)
 		Steam.setStatInt("RunTimeInactive", RunTimeInactive)
-		Steam.storeStats()
+		cooldown_counter += 1
+		if cooldown_counter == cooldown_counter_max:
+			Steam.storeStats()
+			cooldown_counter = 0
 
 func _on_focus_entered():
 	window_is_active = true
